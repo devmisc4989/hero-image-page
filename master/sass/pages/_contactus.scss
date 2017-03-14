@@ -1,0 +1,50 @@
+/* Discoveries Page SCSS */
+
+$c-leading-padding-xl: 275px 240px;
+$c-leading-padding-lg: 115px 180px;
+$c-leading-padding-md: 115px 50px;
+$c-leading-padding-sm: 85px 30px;
+
+.contactus{
+    .block-hero{
+        background-image: url("/img/bg-contact.jpg");
+        display: table;
+        header{
+        	display: table-cell;
+        	vertical-align: middle;
+        	text-align: center;
+        }
+    }
+
+    .nav-bar{
+    	color: $black;
+    }
+
+    .block-presentation{
+        width: auto;
+        padding: $c-leading-padding-xl;
+
+        @media #{$large-screen-down} {    
+            padding: $c-leading-padding-lg;
+        }
+
+        @media #{$medium-screen-down} {         
+            padding: $c-leading-padding-md;
+        }
+
+        @media #{$small-screen-down} {            
+            padding: $c-leading-padding-sm;
+        }   
+    }
+
+    .block-presentation__leading{
+        margin-bottom: 0;        
+    }
+
+    .block-more{
+        padding: 0;
+        header{
+            text-align: center;
+        }        
+    }
+}

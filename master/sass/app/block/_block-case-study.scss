@@ -1,0 +1,178 @@
+
+$case-study-padding-xl: 	50px 50px 0 50px;
+$case-study-padding-lg: 	25px 25px 0 25px;
+
+$case-study-margin-bottom: 	0px;
+
+$block-bg-opacity: 			0.3;
+
+$case-study-logo-size-xl: 	300px;
+$case-study-logo-size-lg: 	200px;
+$case-study-logo-size-md: 	150px;
+$case-study-logo-size-sm: 	120px;
+
+$case-study-title-top-xl: 	10%;
+$case-study-title-top-lg: 	12%;
+$case-study-title-top-md: 	7%;
+$case-study-title-top-sm: 	50%;
+
+$case-study-divider-gap-xl: 50px auto;
+$case-study-divider-gap-lg: 30px auto;
+$case-study-divider-gap-md: 20px auto;
+$case-study-divider-gap-sm: 10px auto;
+
+$case-study-divider-width-xl: 300px;
+$case-study-divider-width-lg: 250px;
+$case-study-divider-width-md: 200px;
+$case-study-divider-width-sm: 100px;
+
+$case-study-wrapper-padding-xl: 0 50px;
+
+$case-study-more-padding-xl: 300px 0;
+$case-study-more-padding-lg: 150px 0;
+$case-study-more-padding-md: 100px 0;
+$case-study-more-padding-sm: 100px 0;
+
+.block-case-study{
+	padding: $case-study-padding-xl;
+	margin-bottom: $case-study-margin-bottom;
+	position: relative;	
+
+    @media #{$large-screen-down} {    
+	    padding: $case-study-padding-lg;
+    }
+
+    @media #{$medium-screen-down} {    	    
+    }
+
+    @media #{$small-screen-down} {            
+    }	
+}
+
+.block-case-study__background{
+	overflow: hidden;
+	width: 100%;
+	opacity: $block-bg-opacity;		
+
+	img{
+		width: 100%;
+
+	    @media #{$small-screen-down} {            
+	    	width: 250%;
+	    	left: -75%;
+	    	position:relative;
+	    }	
+	}
+}
+
+.block-case-study__wrapper{
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	display: table;
+    margin: auto;
+    width: 100%;
+    padding: $case-study-wrapper-padding-xl;
+}
+
+.block-case-study__logo{
+	font-size: $case-study-logo-size-xl;
+
+    @media #{$large-screen-down} {    
+	    font-size: $case-study-logo-size-lg;
+    }
+
+    @media #{$medium-screen-down} {    	    
+	    font-size: $case-study-logo-size-md;
+    }
+
+    @media #{$small-screen-down} {            
+	    font-size: $case-study-logo-size-sm;
+    }	
+}
+
+.block-case-study__title{
+	@extend .h3;
+	text-align: center;
+	margin-top: $case-study-title-top-xl;
+    @media #{$large-screen-down} {    
+    	margin-top: $case-study-title-top-lg;
+    }
+
+    @media #{$medium-screen-down} {    	    
+	    margin-top: $case-study-title-top-md;
+    }
+
+    @media #{$small-screen-down} {            
+	    margin-top: $case-study-title-top-sm;
+    }	
+}
+
+.block-case-study__leading{
+	@extend .body1;
+	text-align: center;
+    @media #{$large-screen-down} {    
+    }
+
+    @media #{$medium-screen-down} {    	    
+    }
+
+    @media #{$small-screen-down} {            
+    }	
+}
+
+.block-case-study__divider{
+	text-align: center;
+	border: 1px solid $black;
+	margin: $case-study-divider-gap-xl;
+	width: $case-study-divider-width-xl;
+    @media #{$large-screen-down} {    
+    	margin: $case-study-divider-gap-lg;
+		width: $case-study-divider-width-lg;
+    }
+
+    @media #{$medium-screen-down} {    	    
+	    margin: $case-study-divider-gap-md;
+		width: $case-study-divider-width-md;
+    }
+
+    @media #{$small-screen-down} {            
+	    margin: $case-study-divider-gap-sm;
+		width: $case-study-divider-width-sm;
+    }	
+}
+
+.block-case-study__description{
+	@extend .link-block;
+	text-align: center;
+    @media #{$large-screen-down} {    
+    }
+
+    @media #{$medium-screen-down} {    	    
+    }
+
+    @media #{$small-screen-down} {            
+    }	
+}
+
+.block-more{
+	h1{
+		text-align: center;
+		margin: 0;
+	}	
+	padding: $case-study-more-padding-xl;
+    @media #{$large-screen-down} {    
+		padding: $case-study-more-padding-lg;
+    }
+
+    @media #{$medium-screen-down} {    	    
+		padding: $case-study-more-padding-md;
+    }
+
+    @media #{$small-screen-down} {            
+		padding: $case-study-more-padding-sm;
+    }		
+}

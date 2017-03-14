@@ -1,0 +1,37 @@
+// Variables
+$block-icon-size: 88px;
+
+// Styles
+.block{
+    @extend .row;
+    margin-bottom:0; 
+}
+
+.block__one-column{
+    @extend .col;
+    @extend .l12;
+    @extend .m12;
+    @extend .s12;
+}
+
+.block__two-column{
+    @extend .col;
+    @extend .l6;
+    @extend .m6;
+    @extend .s12;
+}
+
+.block__three-column{
+    @extend .col;
+    @extend .l4;
+    @extend .m4;
+    @extend .s12;    
+}
+
+.block__icon--sm-logo{
+    font-size: $block-icon-size;
+    color: $white;    
+    text-align: center;
+    vertical-align: middle;
+    z-index: 1000;    
+}

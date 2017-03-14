@@ -1,0 +1,61 @@
+
+$contact-form-padding-xl: 180px 700px;
+$contact-form-padding-lg: 120px 375px;
+$contact-form-padding-md: 120px 250px;
+$contact-form-padding-sm: 50px 30px;
+
+$contact-form-input-bottom-xl: 100px;
+$contact-form-input-bottom-lg: 50px;
+$contact-form-input-bottom-md: 50px;
+$contact-form-input-bottom-sm: 70px;
+
+.block-contact-form{
+	padding: $contact-form-padding-xl;
+	text-align: center;
+
+	input,
+	textarea{
+		@extend .body1;
+		text-align: center;
+		margin-bottom: $contact-form-input-bottom-xl;
+
+	    @media #{$large-screen-down} {    
+			margin-bottom: $contact-form-input-bottom-lg;
+	    }
+
+	    @media #{$medium-screen-down} {    	    
+			margin-bottom: $contact-form-input-bottom-md;
+	    }
+
+	    @media #{$small-screen-down} {            
+			margin-bottom: $contact-form-input-bottom-sm;
+	    }
+
+	}
+
+	input[type=email].invalid{
+		border-bottom: 1px solid $brand-danger;
+	    box-shadow: 0 1px 0 0 $brand-danger;
+	}
+
+	.block-contact-form__fields{
+		transition: visibility 0s, opacity 1s ease;
+
+		.hide{
+			height: 0;
+		}
+	}
+
+    @media #{$large-screen-down} {    
+		padding: $contact-form-padding-lg;
+    }
+
+    @media #{$medium-screen-down} {    	    
+		padding: $contact-form-padding-md;
+    }
+
+    @media #{$small-screen-down} {            
+		padding: $contact-form-padding-sm;
+    }
+}
+

@@ -1,0 +1,12 @@
+
+// Media Query Ranges
+$sm-screen-up: 601px !default;
+$md-screen-up: 993px !default;
+$lg-screen-up: 1681px !default;
+$sm-screen: 600px !default;
+$md-screen: 992px !default;
+$lg-screen: 1680px !default;
+
+$large-screen-down: "only screen and (max-width : #{$lg-screen})" !default; // Normal Desktop
+$medium-screen-down: "only screen and (max-width : #{$md-screen})" !default; // Tablet
+$small-screen-down: "only screen and (max-width : #{$sm-screen})" !default; // Mobile

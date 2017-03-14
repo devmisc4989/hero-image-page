@@ -1,0 +1,66 @@
+// Presentation Values
+$presentation-width-xl:         60%;
+$presentation-width-lg:         60%;
+$presentation-width-md:         60%;
+$presentation-width-sm:         100%;
+
+$presentation-left-xl:              100px;
+$presentation-left-lg:              50px;
+$presentation-left-md:              50px;
+$presentation-left-sm:              35px;
+
+$presentation-leading-bottom-xl:    90px;
+$presentation-leading-bottom-lg:    40px;
+$presentation-leading-bottom-md:    40px;
+$presentation-leading-bottom-sm:    25px;
+
+.block-presentation{
+    position: relative;
+    width: $presentation-width-xl;
+    padding-left: $presentation-left-xl;
+
+    a{
+        color: $black;
+    }
+
+    @media #{$large-screen-down} {
+        width: $presentation-width-lg;
+        padding-left: $presentation-left-lg;
+    }
+
+    @media #{$medium-screen-down} {    
+        width: $presentation-width-md;
+        padding-left: $presentation-left-md;
+    }
+
+    @media #{$small-screen-down} {    
+        width: $presentation-width-sm;
+        padding-left: $presentation-left-sm;
+    }    
+}
+
+.block-presentation__leading{
+    @extend .body1;
+
+    margin-bottom: $presentation-leading-bottom-xl;
+
+    @media #{$large-screen-down} {    
+        margin-bottom: $presentation-leading-bottom-lg;
+    }
+
+    @media #{$medium-screen-down} {    
+        margin-bottom: $presentation-leading-bottom-md;
+    }
+
+    @media #{$small-screen-down} {    
+        margin-bottom: $presentation-leading-bottom-sm;
+    }
+}
+
+.block-presentation__title{
+    @extend .h1;
+}
+
+.block-presentation__leading--bold{
+    font-family: $museosans-regular;
+}

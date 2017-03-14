@@ -1,0 +1,377 @@
+
+// All Screen 1680px and up. (hd)
+// Fonts for Screen 700px and up to 1680 px (default)
+
+$hd-font-size-header : 				160px;
+$hd-font-size-h1 : 					80px;
+$hd-font-size-h2 : 					60px;
+$hd-font-size-h3 :	 				48px;
+$hd-font-size-h6 : 					32px;
+$hd-font-size-body1 : 				48px;
+$hd-font-size-nav-title : 			48px;
+$hd-font-size-nav-list-title : 		32px  !important;
+$hd-font-size-link : 				36px;
+$hd-font-size-link-block : 			36px;
+$hd-font-size-nav-description : 	32px;
+$hd-font-size-nav-icon : 			46px;
+
+$default-font-size-header : 		80px;
+$default-font-size-h1 : 			40px;
+$default-font-size-h2 : 			30px;
+$default-font-size-h3 : 			24px;
+$default-font-size-h6 : 			16px;
+$default-font-size-body1 : 			24px;
+$default-font-size-link : 			18px;
+$default-font-size-link-block : 	24px;
+$default-font-size-nav-description: 16px;
+$default-font-size-nav-title : 		24px;
+$default-font-size-nav-list-title:  16px !important;
+$default-font-size-nav-icon : 		25px;
+
+$mobile-font-size-header : 			32px;
+$mobile-font-size-h1 : 				32px;
+$mobile-font-size-h2 : 				24px;
+$mobile-font-size-h3 : 				16px;
+$mobile-font-size-h6 : 				12px;
+$mobile-font-size-body1 : 			16px;
+$mobile-font-size-link : 			16px;
+$mobile-font-size-link-block : 		16px;
+$mobile-font-size-nav-description : 14px;
+$mobile-font-size-nav-title : 		24px;
+$mobile-font-size-nav-list-title : 	16px !important;
+
+// Line Heights
+
+$hd-line-height-header: 			1.2;
+$hd-line-height-h1: 				1.2;
+$hd-line-height-h2: 				1.2;
+$hd-line-height-h3: 				1.2;
+$hd-line-height-h6: 				1.2;
+$hd-line-height-body1: 				1.2;
+$hd-line-height-nav-title: 			1.2;
+$hd-line-height-nav-list-title: 	1.2;
+$hd-line-height-link: 				1.2;
+$hd-line-height-link-block: 		1.2;
+$hd-line-height-nav-description: 	1.5;
+$hd-line-height-nav-icon: 			1;
+
+$default-line-height-header: 		1.5;
+$default-line-height-h1: 			1.5;
+$default-line-height-h2: 			1.5;
+$default-line-height-h3: 			1.5;
+$default-line-height-h6: 			1.5;
+$default-line-height-body1: 		1.5;
+$default-line-height-link: 			1.5;
+$default-line-height-link-block: 	1.5;
+$default-line-height-nav-icon: 		1;
+$default-line-height-nav-description: 1;
+
+$mobile-line-height-header: 		1.2;
+$mobile-line-height-h1: 			1.2;
+$mobile-line-height-h2: 			1.2;
+$mobile-line-height-h3: 			1.2;
+$mobile-line-height-h6: 			1.2;
+$mobile-line-height-body1: 			1.2;
+$mobile-line-height-link: 			1.2;
+$mobile-line-height-link-block: 	1.2;
+$mobile-line-height-nav-description: 1.2;
+
+// Character Spacing
+$hd-character-spacing-header: 		1px;
+$hd-character-spacing-h1: 			1px;
+$hd-character-spacing-h2: 			1px;
+$hd-character-spacing-h3: 			1px;
+$hd-character-spacing-h6: 			1px;
+$hd-character-spacing-nav-title: 	1px;
+$hd-character-spacing-nav-list-title: 	1px;
+
+$default-character-spacing-header: 	1px;
+$default-character-spacing-h1: 		1px;
+$default-character-spacing-h2: 		1px;
+$default-character-spacing-h3: 		1px;
+$default-character-spacing-h6: 		1px;
+
+$mobile-character-spacing-header: 	1px;
+$mobile-character-spacing-h1: 		1px;
+$mobile-character-spacing-h2: 		1px;
+$mobile-character-spacing-h3: 		1px;
+$mobile-character-spacing-h6: 		1px;
+
+header{
+	font-family: $parabola-regular;
+	font-size: $hd-font-size-header;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: $hd-line-height-header;
+	letter-spacing: $hd-character-spacing-header;
+	text-align: left;
+	color: $black;
+
+	@media #{$large-screen-down} { 				// Below HD
+		font-size: $default-font-size-header;
+		line-height: $default-line-height-header;
+		letter-spacing: $hd-character-spacing-header
+	}
+
+	@media #{$small-screen-down} { 				// Below Mobile
+		font-size: $mobile-font-size-header;
+		line-height: $mobile-line-height-header;
+		letter-spacing: $hd-character-spacing-header			
+	}
+}
+
+.header--white{
+	color: $white;
+}
+
+h1, .h1 {
+	font-family: $parabola-regular;
+	font-size: $hd-font-size-h1;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: $hd-line-height-h1;
+	letter-spacing: $hd-character-spacing-h1;
+	text-align: left;
+	color: $black;
+
+	@media #{$large-screen-down} { 				// Below HD
+		font-size: $default-font-size-h1;
+		line-height: $default-line-height-h1;
+		letter-spacing: $default-character-spacing-h1
+	}
+
+	@media #{$small-screen-down} { 				// Below Mobile
+		font-size: $mobile-font-size-h1;
+		line-height: $mobile-line-height-h1;
+		letter-spacing: $mobile-character-spacing-h1			
+	}
+}
+
+.h1--white{
+	color: $white;
+}
+
+h2, .h2 {
+	font-family: $museosans-regular;
+	font-size: $hd-font-size-h2;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: $hd-line-height-h2;
+	letter-spacing: $hd-character-spacing-h2;
+	text-align: left;
+	color: $black;
+
+	@media #{$large-screen-down} { 				// Below HD
+		font-size: $default-font-size-h2;
+		line-height: $default-line-height-h2;
+		letter-spacing: $default-character-spacing-h2
+	}
+
+	@media #{$small-screen-down} { 				// Below HD
+		font-size: $mobile-font-size-h2;
+		line-height: $mobile-line-height-h2;
+		letter-spacing: $mobile-character-spacing-h2			
+	}
+}
+
+.h2--brown{
+	color: $brand-brown;
+}
+
+.h2--white{
+	color: $white;
+}
+
+h3, .h3 {
+	font-family: $museosans-regular;
+	font-size: $hd-font-size-h3;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: $hd-line-height-h3;
+	letter-spacing: $hd-character-spacing-h3;
+	text-align: left;
+	color: $black;
+
+	@media #{$large-screen-down} { 				// Below HD
+		font-size: $default-font-size-h3;
+		line-height: $default-line-height-h3;
+		letter-spacing: $default-character-spacing-h3
+	}
+
+	@media #{$small-screen-down} { 				// Below HD
+		font-size: $mobile-font-size-h3;
+		line-height: $mobile-line-height-h3;
+		letter-spacing: $mobile-character-spacing-h3			
+	}
+}
+
+h6, .h6 {
+	font-family: $museosans-regular;
+	font-size: $hd-font-size-h6;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: $hd-line-height-h6;
+	letter-spacing: $hd-character-spacing-h6;
+	text-align: left;
+	color: $black;
+
+	@media #{$large-screen-down} { 				// Below HD
+		font-size: $default-font-size-h6;
+		line-height: $default-line-height-h6;
+		letter-spacing: $default-character-spacing-h6
+	}
+
+	@media #{$small-screen-down} { 				// Below HD
+		font-size: $mobile-font-size-h6;
+		line-height: $mobile-line-height-h6;
+		letter-spacing: $mobile-character-spacing-h6			
+	}
+}
+
+.h6--brown{
+	color: $brand-brown;
+}
+
+.nav-title{
+	font-family: $museosans-light;
+	font-size: $hd-font-size-nav-title;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: $hd-line-height-nav-title;
+	letter-spacing: $hd-character-spacing-nav-title;
+	text-align: left;
+	color: $gray;
+
+	@media #{$large-screen-down} { 				// Below HD
+		font-size: $default-font-size-nav-title;
+	}
+
+	@media #{$small-screen-down} { 				// Below HD
+		font-size: $mobile-font-size-nav-title;
+	}	
+}
+
+.nav-list-title{
+	font-family: $museosans-regular;
+	font-size: $hd-font-size-nav-list-title;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: $hd-line-height-nav-list-title;
+	letter-spacing: $hd-character-spacing-nav-list-title;
+	text-align: left;
+	color: $white;	
+
+	@media #{$large-screen-down} { 				// Below HD
+		font-size: $default-font-size-nav-list-title;
+	}
+
+	@media #{$small-screen-down} { 				// Below HD
+		font-size: $mobile-font-size-nav-list-title;
+	}	
+}
+
+.body1 {
+	font-family: $museosans-light;
+	font-size: $hd-font-size-body1;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: $hd-line-height-body1;
+	text-align: left;
+	color: $black;
+
+	@media #{$large-screen-down} { 				// Below HD
+		font-size: $default-font-size-body1;
+		line-height: $default-line-height-body1;
+	}
+
+	@media #{$small-screen-down} { 				// Below HD
+		font-size: $mobile-font-size-body1;
+		line-height: $mobile-line-height-body1;
+	}
+}
+
+.body1--white{
+	color: $white;
+}
+
+.link {
+	font-family: $museosans-regular;
+	font-size: $hd-font-size-link;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: $hd-line-height-link;
+	text-align: left;
+	color: $black;
+	
+	@media #{$large-screen-down} { 				// Below HD
+		font-size: $default-font-size-link;
+		line-height: $default-line-height-link;
+	}
+
+	@media #{$small-screen-down} { 				// Below HD
+		font-size: $mobile-font-size-link;
+		line-height: $mobile-line-height-link;
+	}
+}
+
+.link-block {
+	font-family: $parabola-regular;
+	font-size: $hd-font-size-link-block;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: $hd-line-height-link-block;
+	text-align: left;
+	color: $black;
+
+    @media #{$large-screen-down} {    
+		font-size: $default-font-size-link-block;
+    	line-height: $default-line-height-link-block;
+    }
+
+    @media #{$small-screen-down} {    
+		font-size: $mobile-font-size-link-block;
+    	line-height: $mobile-line-height-link-block;
+    }
+}
+
+.nav-description{
+	font-family: $museosans-light;
+	font-size: $hd-font-size-nav-description;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: $hd-line-height-nav-description;
+	text-align: left;
+	color: $gray;	
+
+	@media #{$large-screen-down} { 				// Below HD
+		font-size: $default-font-size-nav-description;
+		line-height: $default-line-height-nav-description;
+	}
+
+	@media #{$small-screen-down} { 				// Below HD
+		font-size: $mobile-font-size-nav-description;
+		line-height: $mobile-line-height-nav-description;
+	}
+}
+
+.nav-bar-icon{
+    font-size: $hd-font-size-nav-icon;
+    line-height: $hd-line-height-nav-icon;
+    color: $white;	
+
+	@media #{$large-screen-down} { 				// Below HD
+		font-size: $default-font-size-nav-icon;
+    	line-height: $default-line-height-nav-icon;
+	}    
+}

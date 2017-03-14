@@ -1,0 +1,70 @@
+$contact-devider-xl:              36px auto;
+$contact-devider-lg:              13px auto;
+$contact-devider-md:              13px auto;
+$contact-devider-sm:              11px auto;
+
+.contact-card{
+    @extend .row;
+
+    text-align: center;
+    margin-bottom:0; 
+    display: table;
+    width: 100%;
+}
+
+.contact-card--white{
+    background: $white;    
+    .contact-card__header{
+        @extend .h2--brown;
+    }
+}
+
+.contact-card--brown{
+    background: $brand-brown;        
+    .contact-card__header{
+        @extend .h2--white;
+    }
+
+    .contact-card__divider{
+        background: $black;
+    }
+}
+
+.contact-card__header{
+    @extend .h2;
+}
+
+.contact-card__divider{
+    margin: $contact-devider-xl; 
+    width: 50%;
+    height: 2px;
+    background: $gray;
+}
+
+.contact-card__link{
+    @extend .link;
+    color: $black;
+}
+
+.contact-card__wrapper{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media #{$large-and-down} {
+    .contact-card__divider{
+        margin: $contact-devider-lg; 
+    }
+}
+
+@media #{$medium-and-down} {
+    .contact-card__divider{
+        margin: $contact-devider-md; 
+    }
+}
+
+@media #{$small-and-down} {
+    .contact-card__divider{
+        margin: $contact-devider-sm; 
+    }    
+}

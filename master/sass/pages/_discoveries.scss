@@ -1,0 +1,19 @@
+/* Discoveries Page SCSS */
+
+$d-nav-text-shadow: 1px 1px $gray-light;
+
+.discoveries{
+    .block-hero{
+        background-image: url("/img/bg-discover.jpg");
+        display: table;
+        header{
+        	display: table-cell;
+        	vertical-align: middle;
+        	text-align: center;
+        }
+    }
+
+    .nav-bar{
+    	text-shadow: $d-nav-text-shadow;
+    }
+}

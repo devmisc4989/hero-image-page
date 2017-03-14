@@ -1,0 +1,53 @@
+/***** MuseoSans Fonts ******/
+$museosans-light:               'MuseoSans-Light';
+$museosans-regular:             'MuseoSans-Regular';
+$museosans-regular-italic:      'MuseoSans-Regular-Italic';
+$museosans-bold:                'MuseoSans-Bold';
+$parabola-regular:              'PARABOLA-Regular';
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello/fontello.eot?29628');
+  src: url('../fonts/fontello/fontello.eot?29628#iefix') format('embedded-opentype'),
+       url('../fonts/fontello/fontello.woff2?29628') format('woff2'),
+       url('../fonts/fontello/fontello.woff?29628') format('woff'),
+       url('../fonts/fontello/fontello.ttf?29628') format('truetype'),
+       url('../fonts/fontello/fontello.svg?29628#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSans-Light';
+  src: url('../fonts/pioneer/museosans_100-webfont.woff') format('woff'),
+       url('../fonts/pioneer/museosans_100-webfont.ttf') format('truetype'),
+       url('../fonts/pioneer/museosans_100-webfont.svg#museo_sans100') format('svg');
+}
+
+@font-face {
+  font-family: 'MuseoSans-Regular';
+  src: url('../fonts/pioneer/museosans_500-webfont.woff') format('woff'),
+       url('../fonts/pioneer/museosans_500-webfont.ttf') format('truetype'),
+       url('../fonts/pioneer/museosans_500-webfont.svg#museo_sans500') format('svg');
+}
+
+@font-face {
+  font-family: 'MuseoSans-Regular-Italic';
+  src: url('../fonts/pioneer/museosans_500_italic-webfont.woff') format('woff'),
+       url('../fonts/pioneer/museosans_500_italic-webfont.ttf') format('truetype'),
+       url('../fonts/pioneer/museosans_500_italic-webfont.svg#museo_sans500_italic') format('svg');
+}
+
+@font-face {
+  font-family: 'MuseoSans-Bold';
+  src: url('../fonts/pioneer/museosans_700-webfont.woff') format('woff'),
+       url('../fonts/pioneer/museosans_700-webfont.ttf') format('truetype'),
+       url('../fonts/pioneer/museosans_700-webfont.svg#museo_sans700') format('svg');
+}
+
+@font-face {
+  font-family: 'PARABOLA-Regular';
+  src: url('../fonts/pioneer/parabola-regular-webfont.woff') format('woff'),
+       url('../fonts/pioneer/parabola-regular-webfont.ttf') format('truetype'),
+       url('../fonts/pioneer/parabola-regular-webfont.svg#parabolaregular') format('svg');
+}
